@@ -4,9 +4,9 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import HomeScreen from "./HomeScreen";
 import ProfileScreen from "./ProfileScreen";
 
-const Stack = createNativeStackNavigator();
+const Stack: any = createNativeStackNavigator();
 
-const App = () => {
+const App: React.FC<{}> = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>

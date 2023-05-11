@@ -20,7 +20,10 @@
     "react-native-swiper": "^1.6.0-rc.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "@types/react": "~18.0.27",
+    "@types/react-native": "^0.72.0",
+    "typescript": "^4.9.4"
   },
   "private": true
 }

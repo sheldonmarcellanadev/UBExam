@@ -1,7 +1,17 @@
 import * as React from "react";
 import { View, Text, Image } from "react-native";
+import { RandomUser } from "./HomeScreen";
 
-const ProfileScreen = ({ navigation, route }) => {
+interface ProfileScreenProps {
+  navigation: {
+    setOptions:  ((title: any) => void | null) | undefined;
+  };
+  route: {
+    params: RandomUser
+  };
+}
+
+const ProfileScreen: React.FC<ProfileScreenProps> = ({ navigation, route }) => {
   React.useEffect(() => {
     navigation.setOptions({
       title: route.params.first_name + " " + route.params.last_name,
